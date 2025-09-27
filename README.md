@@ -1,11 +1,14 @@
 # Lisa-Mulyawati---Capstone-Project-Titanic-Analysis
 
 ## 📌 Project Overview
-Proyek ini menggunakan dataset Titanic dari Kaggle untuk menganalisis faktor-faktor yang memengaruhi peluang bertahan hidup penumpang. Analisis difokuskan pada gender, kelas sosial (Pclass), dan status keluarga (SibSp, Parch).
+Proyek ini menggunakan dataset Titanic bawaan dari library Seaborn untuk menganalisis faktor-faktor yang memengaruhi peluang bertahan hidup penumpang. Analisis difokuskan pada gender, kelas sosial (Pclass), dan status keluarga (SibSp, Parch).
 
 ## 📂 Dataset
-- **Sumber**: [Titanic - Machine Learning from Disaster (Kaggle)](https://www.kaggle.com/competitions/titanic/data)
-- **File**: train.csv
+- **Sumber**: Titanic dataset dari `seaborn` library (dataset publik bawaan).
+- **Cara akses**: 
+  ```python
+  import seaborn as sns
+  df = sns.load_dataset("titanic")
 
 ## 🔍 Analysis Process
 1. **Data Cleaning**: menghapus missing values, fokus pada kolom relevan (`Survived`, `Sex`, `Pclass`, `Age`).
